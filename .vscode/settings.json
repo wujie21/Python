@@ -1,0 +1,39 @@
+{
+  // Python 解释器路径，替换为你项目的虚拟环境路径
+  "python.defaultInterpreterPath": "C:/Users/Administrator/Python/.conda/python.exe",
+
+  // 格式化配置
+  "editor.formatOnSave": true, // 在保存时自动格式化代码
+
+  // 自动补全配置
+  "python.languageServer": "Pylance", // 使用 Pylance 进行智能补全
+  "python.analysis.typeCheckingMode": "basic", // 基础类型检查
+
+  // 调试配置
+  "python.testing.pytestEnabled": true, // 启用 pytest 作为测试框架
+  "python.testing.unittestEnabled": false, // 禁用 unittest
+
+  // 文件排除和忽略
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+
+  // 终端集成
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "C:/Users/Administrator/Python/.conda"
+  },
+
+  // 代码片段和自动补全配置
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+
+  // 代码运行配置
+  "code-runner.executorMap": {
+    "python": "$pythonPath -u $fullFileName" // 使用已设置的 Python 解释器运行代码
+  }
+}
